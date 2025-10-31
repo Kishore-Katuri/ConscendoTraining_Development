@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Calculate Greater Number" icon-name="standard:account">
+
+        <lightning-input label="Enter first Number" onchange={handleFirst} value={fNumber}></lightning-input>
+        <lightning-input label="Enter Second Number" onchange={handleSecond} value={sNumber}></lightning-input>
+        <lightning-input label="Enter Third Number" onchange={handleThird} value={tNumber}></lightning-input>
+
+        <lightning-button-group>
+            <lightning-button label="Calculate" onclick={handleCalculate} variant="success"></lightning-button>
+             <lightning-button label="Clear" onclick={handleClear} variant="brand"></lightning-button>
+        </lightning-button-group>
+
+    </lightning-card>
+</template>
