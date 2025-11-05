@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Area Calculator">
+        <lightning-input label="enter the length" onchange={handleLength}></lightning-input>
+        <lightning-input label="enter the Breath" onchange={handleBreath}></lightning-input>
+
+        <lightning-button label="Calculate" onclick={handleCalculate} variant="success" icon-name="utility:heart"></lightning-button>
+        <b>The Result is:</b>{result}
+
+    </lightning-card>
+    
+</template>
