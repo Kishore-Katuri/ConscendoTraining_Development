@@ -1,0 +1,40 @@
+<template>
+    <lightning-card title="ArrayComponent_LWC_EG_pratice">
+        {name}<p></p>
+        {cities}
+        <p></p>
+
+       <B> ***********FOR EACH FOR ITEM*************</B>
+       <template for:each={cities} for:item="ct">
+        <p key={ct}>Good Morning{ct}</p>
+       </template>
+       <p></p>
+       {friends}
+       <p></p>
+       <template for:each={friends} for:item="fr">
+        <p key={fr}>Good Morning <b>{fr}</b></p>
+       </template>
+       <p></p>
+       ********************ITERATOR-WAY****************************
+       <p></p>
+       <template iterator:ct={cities}>
+        <p key={ct.value}>Good Morning{ct.value}</p>
+       </template>
+       <p></p>
+       <template iterator:ft={friends}>
+        <p key={ft.value}>Good Morning<b>{ft.value}</b></p>
+       </template>
+       <p></p>
+       {statesct}
+       <p></p>
+       <template iterator:st={statesct}>
+        <template iterator:it={st.value}>
+            <p key={it.value}>Good Morning {it.value}</p>
+        </template>
+       </template>
+
+
+
+    </lightning-card>
+    
+</template>
