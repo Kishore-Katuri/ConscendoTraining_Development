@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Parent Component calling Child Component" icon-name="utility:heart">
+
+        <lightning-input label="Enter the first Number" onchange={handlefirst}></lightning-input>
+        <lightning-input label="Enter the Second Number" onchange={handlesecond}></lightning-input>
+
+        <c-lwc_eg1_api_child_component num1={f} num2={s}></c-lwc_eg1_api_child_component>
+
+    </lightning-card>
+</template>
