@@ -1,0 +1,12 @@
+.mycrd
+{
+    height:500px;
+    width:500px;
+    margin-left:500px;
+    border-style: solid;
+    border-width:4px;
+    border-color: blue;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

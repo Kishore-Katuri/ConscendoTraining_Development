@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Interest Calculator" icon-name="utility:heart" class="mycrd">
+
+        <lightning-input label="Enter the Principal Amount" onchange={handlePrincipal}></lightning-input>
+        <lightning-input label="Enter the Tenture period" onchange={handleTenture}></lightning-input>
+        <lightning-input label="Enter the Rate of Interest" onchange={handleInterest}></lightning-input>
+
+        <lightning-button label="Submit" variant="Success" icon-name="utility:bug" onclick={handleSubmit}></lightning-button>
+        <lightning-button label="Clear" variant="destructive" onclick={handleClear}></lightning-button>
+
+        <p></p>
+        <b>The Simple Interest is:</b>{si};
+        <p></p>
+        <b>The Monthly EMI is:</b>{mon_emi};
+
+
+    </lightning-card>
+    
+</template>
