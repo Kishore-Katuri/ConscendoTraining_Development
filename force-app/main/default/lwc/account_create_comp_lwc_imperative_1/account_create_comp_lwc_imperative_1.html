@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Server Side Controller Imperation" icon-name="standard:account">
+        <lightning-input label="Enter Account Name" onchange={handleName}></lightning-input>
+        <lightning-input label="Enter Account Phone" onchange={handlePhone}></lightning-input>
+        <lightning-input label="Enter Account Rating" onchange={handleRating}></lightning-input>
+        <lightning-input label="Enter Account Industry" onchange={handleIndustry}></lightning-input>
+
+        <lightning-button label="Save" variant="Success" icon-name="utility:save" onclick={handleSave}></lightning-button>
+
+    </lightning-card>
+    
+</template>
