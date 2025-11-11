@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Fetching Accounts Using @wire" icon-name="standard:account">
+        <lightning-layout multiple-rows="true">
+            <template if:true={rupom.data}>
+                <template for:each={rupom.data} for:item="ac">
+                    <lightning-layout-item size="4" key={ac.Id} padding="around-small">
+                        <b>Account Name:</b> {ac.Name}<p></p>
+                        <b>Phone:</b> {ac.Phone}<p></p>
+                        <b>Industry:</b> {ac.Industry}<p></p>
+                        <b>Rating:</b> {ac.Rating}<p></p>
+                    </lightning-layout-item>
+                </template>
+            </template>
+            <template if:true={rupom.error}>
+                <div class="slds-text-color_error slds-m-around_small">
+                    Error loading accounts
+                </div>
+            </template>
+        </lightning-layout>
+        <p><b>******************************DATA TABLE USING @WIRE****************************************************</b></p>
+        <lightning-datatable key-field="Id" data={rupom.data} columns={columns} hide-checkbox-column></lightning-datatable>
+    </lightning-card>
+</template>
