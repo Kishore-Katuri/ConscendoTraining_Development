@@ -1,0 +1,42 @@
+<template>
+    <lightning-card title="Opportunity Datatable using Wire method" icon-name="standard:opportunity">
+        <p><b>**********************************Fetching data using wire(1)**********************************************************</b></p>
+
+        <!-- Simple list rendering -->
+        <lightning-layout multiple-rows="true">
+            <template if:true={rupom.data}>
+                <template for:each={rupom.data} for:item="opp">
+                    <lightning-layout-item size="4" key={opp.Id} padding="around-small">
+                        <div>
+                            <b>Opportunity Name:</b> {opp.Name}
+                        </div>
+                        <div>
+                            <b>Close Date:</b> {opp.CloseDate}
+                        </div>
+                        <div>
+                            <b>Stage Name:</b> {opp.StageName}
+                        </div>
+                        <div>
+                            <b>Description:</b> {opp.Description}
+                        </div>
+                    </lightning-layout-item>
+                </template>
+            </template>
+            <template if:true={rupom.error}>
+                <div class="slds-text-color_error slds-m-around_small">
+                    Error loading opportunities
+                </div>
+            </template>
+        </lightning-layout>
+
+        <p><b>*************************************DataTable*********************************************************</b></p>
+        <template if:true={rupom.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={rupom.data}
+                columns={columns}
+                hide-checkbox-column="true"
+            ></lightning-datatable>
+        </template>
+    </lightning-card>
+</template>
