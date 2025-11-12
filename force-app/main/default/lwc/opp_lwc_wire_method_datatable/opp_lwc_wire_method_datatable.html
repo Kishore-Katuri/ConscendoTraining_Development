@@ -1,7 +1,9 @@
 <template>
     <lightning-card title="Opportunity Datatable using Wire method" icon-name="standard:opportunity">
-        <p><b>**********************************Fetching data using wire(1)**********************************************************</b></p>
 
+        <lightning-input label="enter the opportunity name for search" type="search" onchange={handleSearch}></lightning-input>
+        <p></p>
+        <p><b>**********************************Fetching data using wire(1)**********************************************************</b></p>
         <!-- Simple list rendering -->
         <lightning-layout multiple-rows="true">
             <template if:true={rupom.data}>

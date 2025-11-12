@@ -10,7 +10,12 @@ const columns = [
 
 export default class Opp_lwc_wire_method_datatable extends LightningElement {
     columns = columns;
+    st='';
 
-    @wire(fetchopp)
+    handleSearch(event){
+        this.st=event.target.value;
+    }
+
+    @wire(fetchopp,{stext:'$st'})
     rupom;
 }
