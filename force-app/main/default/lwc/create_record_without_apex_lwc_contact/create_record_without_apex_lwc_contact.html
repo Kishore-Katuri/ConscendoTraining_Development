@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Create-Record without Apex on Contact">
+        <lightning-input label="Enter the FirstName" onchange={handleFirst}></lightning-input>
+        <lightning-input label="Enter the LastName" onchange={handleLast}></lightning-input>
+        <lightning-input label="Enter the Email" onchange={handleEmail}></lightning-input>
+        <lightning-input label="Enter the Phone" onchange={handlePhone}></lightning-input>
+        <lightning-input label="Enter the Description" onchange={handleDes}></lightning-input>
+
+        <lightning-button label="Save" variant="success" icon-name="utility:save" onclick={handleSave}></lightning-button>
+    </lightning-card>
+    
+</template>
