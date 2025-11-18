@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="LDS-record-view-form" icon-name="standard:account">
+        **************************************Record View Form*********************************************
+        <lightning-record-view-form record-id={recordId} object-api-name={objname}>
+        <lightning-output-field field-name={Name}></lightning-output-field>
+        <lightning-output-field field-name={Phone}></lightning-output-field>
+        <lightning-output-field field-name={Description}></lightning-output-field>
+        <lightning-output-field field-name={Industry}></lightning-output-field>
+        <lightning-output-field field-name={Fax}></lightning-output-field>
+        <lightning-output-field field-name={Rating}></lightning-output-field>
+        </lightning-record-view-form>
+
+        **********************************Record Edit Form*********************************************
+        <lightning-record-edit-form record-id={recordId} object-api-name={objname}>
+        <lightning-input-field field-name={Name}></lightning-input-field>
+        <lightning-input-field field-name={Phone}></lightning-input-field>
+        <lightning-input-field field-name={Description}></lightning-input-field>
+        <lightning-input-field field-name={Rating}></lightning-input-field>
+        <lightning-input-field field-name={Industry}></lightning-input-field>
+        <lightning-input-field field-name={Fax}></lightning-input-field>
+        </lightning-record-edit-form>
+
+        <p></p>
+
+        **************************************Record Flow********************************************
+        <p></p>
+
+        <lightning-record-form record-id={recordId} object-api-name={objname} mode="View" layout-type="Full"></lightning-record-form>
+
+    </lightning-card>
+</template>
