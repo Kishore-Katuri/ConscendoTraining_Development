@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Employee details from Child Component" icon-name="standard:lead">
+        <lightning-input label="Enter the Employee Name" onchange={handleName}></lightning-input>
+        <lightning-input label="Enter the Employee Age" onchange={handleAge}></lightning-input>
+        <lightning-input label="Enter the Employee Salary" onchange={handleSalary}></lightning-input>
+        <lightning-input label="Enter the Employee Role" onchange={handleRole}></lightning-input>
+
+        <lightning-button label="Submit" icon-name="utility:save" variant="success" onclick={handleSubmit}></lightning-button>
+
+    </lightning-card>
+    
+</template>
