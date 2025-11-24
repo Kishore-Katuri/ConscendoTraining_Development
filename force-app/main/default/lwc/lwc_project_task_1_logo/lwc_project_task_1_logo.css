@@ -1,0 +1,107 @@
+.page-wrapper {
+    background: #f2f5fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header-container {
+    background: #013b91;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.bank-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username {
+    font-weight: 600;
+}
+
+/* MAIN CARD */
+.main-card {
+    background: #fff;
+    width: 70%;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.congrats {
+    font-size: 32px;
+    color: #013b91;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 30px;
+}
+
+.debit-card {
+    width: 260px;
+    border-radius: 10px;
+}
+
+.details {
+    text-align: left;
+    font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+    background: #002f6c;
+    color: white;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.footer-text {
+    font-size: 12px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
