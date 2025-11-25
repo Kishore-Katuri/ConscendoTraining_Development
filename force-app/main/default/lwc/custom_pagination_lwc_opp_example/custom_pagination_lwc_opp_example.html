@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Compressed Pagination">
+
+        <lightning-datatable
+            key-field="Id"
+            data={records}
+            columns={columns}>
+        </lightning-datatable>
+
+        <div class="pagination" style="margin-top:12px; text-align:center;">
+            <template for:each={pageList} for:item="page">
+                <button
+                    key={page.label}
+                    data-id={page.label}
+                    onclick={handlePageClick}
+                    class={page.className}
+                    disabled={page.disabled}>
+                    {page.label}
+                </button>
+            </template>
+        </div>
+
+    </lightning-card>
+</template>

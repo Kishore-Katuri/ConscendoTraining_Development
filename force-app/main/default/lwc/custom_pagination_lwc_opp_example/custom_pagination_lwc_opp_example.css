@@ -1,0 +1,37 @@
+.pagination {
+/* Non-empty placeholder to satisfy Lightning Component Bundle validation */
+:host {
+    /* No visual impact; keeps CSS resource valid */
+    display: contents;
+}
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pageBtn {
+    margin: 0 4px;
+    padding: 6px 12px;
+    background-color: #f4f6f9;
+    border: 1px solid #d8dde6;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.activePage {
+    margin: 0 4px;
+    padding: 6px 12px;
+    background-color: #0176d3;
+    color: white;
+    border: 1px solid #0176d3;
+    border-radius: 4px;
+}
+
+/* make ellipsis visually like text and not clickable */
+button[disabled] {
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    padding: 6px 8px;
+    color: #333;
+    font-weight: bold;
+}
