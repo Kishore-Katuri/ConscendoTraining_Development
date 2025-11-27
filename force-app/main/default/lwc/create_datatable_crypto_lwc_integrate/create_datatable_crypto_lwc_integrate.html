@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Live Crypto Prices (Real API)" icon-name="utility:money">
+        <div class="slds-p-around_medium">
+            <lightning-datatable
+                key-field="symbol"
+                data={data}
+                columns={columns}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
