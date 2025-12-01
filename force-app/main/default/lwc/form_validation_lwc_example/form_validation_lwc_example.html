@@ -1,0 +1,61 @@
+<template>
+<lightning-card title="Sample Form in Performance component">
+        <div class="slds-p-around_medium">
+
+            <lightning-input
+                class="validate"
+                label="Full Name"
+                name="fullName"
+                pattern="^[0-9]{3,}$"
+                type="text"
+                required
+                onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-input
+                class="validate"
+                label="Contact Phone"
+                name="phone"
+                type="tel"
+                required
+                pattern="[0-9]{10}"
+                message-when-pattern-mismatch="Phone must be 10 digits"
+                onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-input
+                class="validate"
+                type="date"
+                name="dob"
+                label="Date of Birth"
+                required
+                onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-radio-group
+                class="validate"
+                label="Gender"
+                name="gender"
+                options={genderOptions}
+                required
+                onchange={handleChange}>
+            </lightning-radio-group>
+
+            <lightning-input
+                class="validate"
+                type="checkbox"
+                name="terms"
+                label="I accept the Terms & Conditions"
+                onchange={handleChange}>
+            </lightning-input>
+
+            <lightning-button
+                class="slds-m-top_medium"
+                label="Submit"
+                variant="brand"
+                onclick={handleSubmit}>
+            </lightning-button>
+
+        </div>
+    </lightning-card>
+</template>
